@@ -56,6 +56,5 @@ if __name__ == '__main__':
 
     # escreve os dados no formato delta na bronze
     appl.write.format("delta").mode("append").saveAsTable("default.rw_cadastro")
-    #appl.write.format("delta").mode("overwrite").saveAsTable("default.tr_cadastro")
 
     spark.stop()
